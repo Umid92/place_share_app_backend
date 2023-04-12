@@ -10,4 +10,8 @@ router.get("/:pid", placeConrollers.getPlaceById);
 
 router.get("/users/:uid", placeConrollers.getPlaceByUserId);
 
+router.patch("/:pid",placeConrollers.updatePlace)
+
+router.delete("/:pid",placeConrollers.deletePlace)
+
 module.exports = router;
